@@ -19,3 +19,10 @@ body {
 #palletteSelector {
     margin-left: 1em;
 }
+
+@media only screen and (max-width: 800px) {
+    .bottom {
+        position: relative;
+        padding-top: 2em;
+    }
+}
