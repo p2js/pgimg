@@ -1,7 +1,8 @@
 # pgImg
 
 A simple webtoy to generate unique images from text seeds.
-You can try it over on [my website](https://alfiot.net/pgimg)
+
+You can try it over on [my website](https://alfiot.net/pgimg).
 
 ### How does it work?
 
