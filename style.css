@@ -1,0 +1,21 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #CCC;
+    text-align: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#seed {
+    margin-left: 1em;
+    width: 12.5em;
+}
+
+#palletteSelector {
+    margin-left: 1em;
+}

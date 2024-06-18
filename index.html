@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>pgImg</title>
+</head>
+
+<body>
+    <h1>PGImg</h1>
+    <p>Procedurally generated images!</p>
+    <p>Type some text below,</p>
+    <p>choose a color pallette and generate a unique vertical banner!</p>
+
+    <canvas id="image" height="380" width="180" style="background-color: black;"></canvas>
+    <p>Input seed:<input id="seed" type="text" placeholder="seed..."></p>
+    <p>Select color pallette:<select id="palletteSelector"></select></p>
+    <div class="bottom">
+        <p><i>Dedicated to Suzi &lt;3</i></p>
+        <a href="https://github.com/p2js/PGImg">View on Github</a>
+    </div>
+    <script src="main.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
