@@ -35,6 +35,9 @@ const palettes = {
     "Grayscale (grey)": [
         "#1e1e1e", "#2f2f2f", "#404040", "#515151", "#626262", "#737373", "#848484", "#959595"
     ],
+    "Citrus (Yellow/Orange)": [
+        "#f7df47", "#f7d843", "#f8d240", "#f8cb3c", "#f8c439", "#f8bd35", "#f9b732", "#f9b02e"
+    ],
     "Paint (various)": [
         "red", "blue", "green", "yellow", "orange", "purple", "pink", "black"
     ]
@@ -51,6 +54,7 @@ Object.entries(palettes).forEach(([name]) => {
 const updateImage = () => {
     generateAndPaintImage(window.seed.value, palettes[window.paletteSelector.value], window.canvas, window.image, 20);
 }
+
 window.seed.addEventListener("input", updateImage);
 window.paletteSelector.addEventListener("change", updateImage);
 updateImage();
