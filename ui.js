@@ -1,4 +1,4 @@
-const pallettes = {
+const palettes = {
     "Northern Lights (Purple/Blue/Green)": [
         "#7a62a1", "#7375b0", "#6987bd", "#6b99b8", "#6eaab2", "#70bbac", "#90c6af", "#b2d0b3"
     ],
@@ -44,16 +44,17 @@ const pallettes = {
 }
 
 // Populate the page's pallette selector with the color pallettes
-Object.entries(pallettes).forEach(([name]) => {
+Object.entries(palettes).forEach(([name]) => {
     let option = document.createElement("option");
     option.value = option.innerHTML = name;
-    window.palletteSelector.appendChild(option);
+    window.paletteSelector.appendChild(option);
 });
 
 // Redraw image on input update and page load
-const updateCanvas = () => {
-    generateAndPaintImage(window.seed.value, pallettes[window.palletteSelector.value], window.image, 20);
+const updateImage = () => {
+    generateAndPaintImage(window.seed.value, palettes[window.paletteSelector.value], window.canvas, window.image, 20);
 }
-window.seed.addEventListener("input", updateCanvas);
-window.palletteSelector.addEventListener("change", updateCanvas);
-updateCanvas();
+
+window.seed.addEventListener("input", updateImage);
+window.paletteSelector.addEventListener("change", updateImage);
+updateImage();
