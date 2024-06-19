@@ -9,24 +9,27 @@
     <meta name="theme-color" content="#CCCCCC" data-react-helmet="true" />
     <meta content="https://alfiot.net/pgimg" property="og:url" />
     <meta property="og:title" content="PGImg" />
-    <meta content="Procedurally generated images!" property="og:description" />
+    <meta content="Procedurally generated pixelart!" property="og:description" />
     <link rel="stylesheet" href="./style.css">
     <title>PGImg</title>
 </head>
 
 <body>
     <h1>PGImg</h1>
-    <p>Procedurally generated images!</p>
+    <p>Procedurally generated pixelart!</p>
     <p>Type some text below,</p>
-    <p>choose a color pallette and generate a unique vertical banner!</p>
+    <p>choose a color palette and generate a unique vertical banner!</p>
 
-    <canvas id="image" height="380" width="180" style="background-color: black;"></canvas>
+    <img id="image" width="180" height="380">
+
     <p>Input seed:<input id="seed" type="text" placeholder="seed..."></p>
-    <p>Select color pallette:<select id="palletteSelector"></select></p>
+    <p>Select color palette:<select id="paletteSelector"></select></p>
     <div class="bottom">
         <p><i>Dedicated to Suzi &lt;3</i></p>
         <a href="https://github.com/p2js/pgimg">View on Github</a>
     </div>
+
+    <canvas id="canvas" width="180" height="380" hidden></canvas>
     <script src="main.js"></script>
     <script src="ui.js"></script>
 </body>
